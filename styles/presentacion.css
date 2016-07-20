@@ -1,0 +1,195 @@
+
+@font-face{
+    font-family: rob;
+    src: url(../FONT/Roboto-Thin.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    height: 100vh;
+}
+.center-crop {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .img-main{
+        background-image: url("../iMAGENES/go.jpg");
+        
+        height: 100px;
+        }
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    }
+.nav li{
+   display: inline-block;
+    }
+.nav li a{
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  color: #444444;
+  font-weight: lighter;
+  font-family: rob;
+}
+.nav li:hover{
+    background: #dddddd;
+}
+.nav .login{
+    background: #33b5e5;
+    color: white;
+    float: right;
+}
+.nav .login a:hover{
+     background: royalblue;
+}
+.downdrop-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    background: #e6e6e6;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+
+}
+.downdrop-content a{
+    padding: 10px;
+}
+.downdrop:hover .downdrop-content{
+    display: block;
+}
+.downdrop-content a:hover{
+    background: #33b5e5;
+}
+/*<!--.container{
+    display: block;
+    overflow: auto;
+    clear: left;
+    height: 90%;
+    min-height: 90%;
+}
+.container > div{
+    min-height: 400px;
+    padding: 20px;
+}
+.container > div:nth-child(even){
+    background: #efefef;
+*/
+.table1, .table2{
+    width: 100%;
+    border-collapse: collapse;
+    /*border: 1px solid #777777;*/
+}
+
+.table1 td, .table1 th, .table2 td, .table2 th{
+    padding: 10px;
+    text-align: center;
+}
+.table1 tr:nth-child(odd){
+    background: #eeeeee;
+
+}
+.table1  tr:nth-child(even){
+    background: #bbbbbb;
+}
+.table1 tr:first-child{
+    background: dodgerblue;
+}
+.table1 th{
+    color: white;
+}
+.table2 tr{
+    border-bottom: 1px solid #333333;
+
+}
+.table2 tr:first-child{
+    background: mediumseagreen;
+    color: white;
+    border: none;
+
+}
+.table2 td:first-child{
+    font-weight: bold;
+}
+form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+
+}
+form input[type="submit"]{
+    width: auto;
+    padding: 7px;
+    background: #33b5e5;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+   transition: background 0.5s box-shadow 0.5s; 
+}
+form input[type="submit"]:hover{
+   background: dodgerblue;
+   box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+form input[type="text"]:focus, form input[type="email"]:focus{
+   border: 1px solid lightseagreen;
+   border-radius: 10px; 
+   outline: none;   
+}
+form label{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+form textarea:focus{
+    border-radius: 8px;
+    border: 1px solid lightseagreen;
+    outline: none;  
+}
+
+main{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    height: 100%;
+    
+}
+footer{
+    background: #333333;
+    color: #ffffff;
+    min-height: 80px;
+}
+.container{
+    flex: 1;
+    overflow: scroll;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+section:nth-child(even){
+    background: #eeeeee;
+}
+
+@media only screen and (min-width:600px){
+    .img-main{
+        background-image: url("../iMAGENES/go.jpg");
+        
+        height: 200px;
+        }
+}
+  
+@media only screen and (min-width:960px){
+    .img-main{
+        background-image: url("../iMAGENES/go.jpg");
+        
+        height: 270px;
+        }
+}
+

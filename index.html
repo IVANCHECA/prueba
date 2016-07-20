@@ -5,10 +5,119 @@
      <meta name = "keywords" content= "hola mundo">
      <meta name = "descrption" content= "ejemplo html">
        <title></title>
+       <link rel="stylesheet" href="styles/main.css">
 
-        <link rel =" shortcut icon" href ="../iMAGENES/images.png">
    </head>
  <body>
-    <h1>hola todos es una prueba</h1>
+   <div class="contenido2">contenido2</div>
+   <a id ="enlaces"></a>
+   <a href="pantalla2.html">siguiente pantalla</a>
+   <a id ="formularios">formularios</a>
+   <a href="#texto">texto</a>
+   <a href="#listas">listas</a>
+   <a href="#enlaces">enlacesd</a>
+   <a href="#tablas">texto</a>
+   <a href="#formujlarios">formularios</a>
+   <a id ="formularios"></a>
+   <img  src = "iMAGENES/mundo.jpg" alt="mundo la tiera">
+   <audio controls autoplay>
+     <source src="http://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+   </audio><br>
+    <h2 >PRUEBA DE ETIQUETAS</h2>
+    <h2>es un pagina d ejemplo</h2>
+
+    <form >
+    <label for ="nom">nombre</label>
+    <input  class="contenido"type="text" id="nom" placeholder="nombre completo" maxlength="6"><br>
+    <label for ="ced">cedula
+    <input  class="contenido"type="number" id="ced" min="0" max="100" required ><br>
+    <label for="email">correo</label>
+    <input  class="contenido"type="text" pattern="[a,b]{1,3}" title="solo a y b"><br>
+    <input type="radio" value="M" name="genero">Masculino
+    <input type="radio" value="F" name="genero">Femenino
+    <br>
+    <textarea name="descripcion" id="des" cols="30" rows="10"></textarea>
+    <select name="color">
+      <optgroup label="calidos">
+      <option value="red">rojo</option>
+      <option value="gren">verde</option>
+    </optgroup>
+    <optgroup label="frio">
+      <option value="blue">azul</option>
+    </optgroup>
+    </select><br>
+    <input type "submit" value="enviar">
+    <input type "reset" value="reiniciar">
+    <button>boton</button>
+  </form>
+  <a id ="texto"></a>
+       <p>
+         <b>
+           <h2><strong>hola todos</strong></h2>
+           <mark>hola esta es una practica</mark> de htmel <ins> <b> HOLA MUNDO esta es una aplicacion de ahtml <pre>para desaroolar cosas basicas </b></ins>para ensayar las <sub>3</sub>etiquetas e suan</pre> clase de nuevas teconologia
+         </b>
+       </p>
+       <hr><pre> preformatos <i> esto es un ejemplo</i><pre></hr>
+         <meter value="0">cero absoluto</meter>
+          <a id ="tablas"></a>
+         <table border="1">
+            <tr>
+               <td colspan="2" rowspan ="2">celda</td>
+               <td colspan="4">celdacelda</td>
+               <td>celda</td>
+           </tr>
+           <tr>
+             <td>celda</td>
+              <td colspan="2">celda</td>
+              <td colspan="2">celdaceldacelda</td>
+
+          </tr>
+          <tr>
+
+             <td rowspan="2">celda</td>
+             <td rowspan="2">celda</td>
+             <td>celda</td>
+             <td colspan="2">celda</td>
+             <td colspan="2">celda</td>
+
+         </tr>
+         <tr>
+           <td>celda</td>
+            <td colspan="2">celda</td>
+            <td colspan="3">celdaceldacelda</td>
+        </tr>
+        </table>
+        <a id ="listas"></a>
+         <ol>lista ordena
+           <li>area</li>
+           <li>materia</li>
+         <ol>
+         <ul>
+           <li>area</li>
+           <li>materia</li>
+         </ul>
+         <dl>list
+           <dt> TITULOPRINCIPAL
+             <dd>HOLA AMIGOS
+             </dd>
+           </dt>
+         </dl>
+         <table border="1" >
+           <tr>
+             <th>nombre</th>
+             <th>cedula</th>
+           </tr>
+           <tr>
+             <td>dario</td>
+             <td>123</td>
+           </tr>
+           <a id="frame"></a>
+           <iframe src="pantalla2.html" framrborder ="1"></iframe>
+           <div class="contenedor">
+             <div>
+               hola
+             </div>
+           </div>
+
  </body>
 </html>
